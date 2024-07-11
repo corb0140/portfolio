@@ -4,7 +4,7 @@ import React from "react";
 const Banner = () => {
   return (
     <section
-      id="about"
+      id="banner"
       className="banner h-screen w-full px-5 flex flex-col justify-center"
     >
       <p className="text-secondary pb-4">Hi, my name is</p>
@@ -15,12 +15,10 @@ const Banner = () => {
         I am a full-stack developer.
       </p>
       <p className="text-gray-300 text-sm tracking-tighter">
-        As a full-stack developer currently enrolled at Algonquin college, I am
-        passionate about blending creativity with technology. With a strong
-        foundation in front-end and back-end development, I’m adept at crafting
-        seamless digital experiences. I thrive in team environments, communicate
-        effectively, and love tackling meaningful projects. Eager to keep
-        learning and making great strides through technology.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet quae
+        sunt a quidem, nemo aperiam corporis ut provident! Cupiditate asperiores
+        accusamus natus tempore autem veritatis dolore molestiae quis neque
+        expedita!
       </p>
 
       <Button design={"relative h-16 w-64 top-12"} text={"Contact Me"} />

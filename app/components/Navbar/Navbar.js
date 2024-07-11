@@ -1,11 +1,11 @@
 import { useRouter } from "next/navigation";
-import { useState } from "react";
-import { AnimatePresence, useAnimate } from "framer-motion";
+import { useState, useRef } from "react";
+import { AnimatePresence, useAnimate, motion, useScroll } from "framer-motion";
 
 import MobileNavMenu from "@/app/Modals/MobileNavMenu";
+import { openMenu, closeMenu } from "@/app/MenuAnimation/MenuAnimation";
 
 const Navbar = () => {
-  const [scope, animate] = useAnimate();
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const router = useRouter();
 
@@ -13,90 +13,23 @@ const Navbar = () => {
     router.back();
   };
 
+  // Animation for the navbar - useScroll
+  const targetRef = useRef(null);
+  const { scrollYProgress } = useScroll();
+
+  // Animation for the mobile menu - useAnimate
+  const [scope, animate] = useAnimate();
   const menuAnimation = async () => {
     if (showMobileMenu === false) {
-      await animate(
-        "#menuLine_1",
-        {
-          width: 0,
-          opacity: 0,
-        },
-        {
-          duration: 0.2,
-        }
-      );
-      await animate(
-        "#menuLine_2",
-        {
-          width: 0,
-          opacity: 0,
-        },
-        {
-          duration: 0.2,
-        }
-      );
-      await animate(
-        "#menuLine_3",
-        {
-          width: "0",
-          opacity: 0,
-        },
-        {
-          duration: 0.2,
-        }
-      );
-      await animate(
-        "#exit",
-        {
-          rotate: 360,
-          opacity: 1,
-        },
-        {
-          duration: 0.5,
-        }
-      );
+      {
+        openMenu.map((item) => {
+          animate(item.id, item);
+        });
+      }
     } else {
-      await animate(
-        "#exit",
-        {
-          rotate: 0,
-          opacity: 0,
-        },
-        {
-          duration: 0.5,
-        }
-      );
-      await animate(
-        "#menuLine_1",
-        {
-          opacity: 1,
-          width: "2.5rem",
-        },
-        {
-          duration: 0.2,
-          delay: 0.2,
-        }
-      );
-      await animate(
-        "#menuLine_2",
-        {
-          opacity: 1,
-          width: "1.75rem",
-        },
-        {
-          duration: 0.2,
-        }
-      );
-      await animate(
-        "#menuLine_3",
-        {
-          opacity: 1,
-          width: "1rem",
-        },
-        {
-          duration: 0.2,
-        }
-      );
+      closeMenu.map((item) => {
+        animate(item.id, item);
+      });
     }
   };
 
@@ -106,7 +39,12 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed w-full h-24 z-40 flex items-center justify-between px-5 ">
+      <motion.nav
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        ref={targetRef}
+        className="fixed w-full h-24 z-40 flex items-center justify-between px-5 "
+      >
         <div onClick={goBack} className="hover:cursor-pointer">
           <svg
             viewBox="0 0 200 200"
@@ -156,7 +94,7 @@ const Navbar = () => {
             close
           </span>
         </div>
-      </nav>
+      </motion.nav>
 
       <AnimatePresence>{showMobileMenu && <MobileNavMenu />} </AnimatePresence>
     </>

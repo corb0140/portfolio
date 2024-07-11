@@ -42,7 +42,7 @@ const MobileNavMenu = () => {
           <li className="flex flex-col items-center gap-1">
             <span className="text-secondary">01.</span>
             <a
-              href="#"
+              href="#about"
               className="hover:text-secondary transition duration-300"
             >
               About
@@ -51,25 +51,25 @@ const MobileNavMenu = () => {
           <li className="flex flex-col items-center gap-1">
             <span className="text-secondary">02.</span>
             <a
-              href="#"
+              href="#technologies"
               className="hover:text-secondary transition duration-300"
             >
-              Experience
+              Technologies
             </a>
           </li>
           <li className="flex flex-col items-center gap-1">
             <span className="text-secondary">03.</span>
             <a
-              href="#"
+              href="#projects"
               className="hover:text-secondary transition duration-300"
             >
-              Work
+              Projects
             </a>
           </li>
           <li className="flex flex-col items-center gap-1">
             <span className="text-secondary">04.</span>
             <a
-              href="#"
+              href="#contact"
               className="hover:text-secondary transition duration-300"
             >
               Contact

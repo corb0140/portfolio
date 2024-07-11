@@ -1,6 +1,12 @@
 import { useRouter } from "next/navigation";
-import { useState, useRef } from "react";
-import { AnimatePresence, useAnimate, motion, useScroll } from "framer-motion";
+import { useState } from "react";
+import {
+  AnimatePresence,
+  useAnimate,
+  motion,
+  useScroll,
+  useMotionValueEvent,
+} from "framer-motion";
 
 import MobileNavMenu from "@/app/Modals/MobileNavMenu";
 import { openMenu, closeMenu } from "@/app/MenuAnimation/MenuAnimation";
@@ -14,8 +20,26 @@ const Navbar = () => {
   };
 
   // Animation for the navbar - useScroll
-  const targetRef = useRef(null);
-  const { scrollYProgress } = useScroll();
+  const [hidden, setHidden] = useState(false);
+  const [shadow, setShadow] = useState(false);
+  const { scrollY } = useScroll();
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const prev = scrollY.getPrevious();
+
+    if (latest > prev && latest > 80) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+
+    if (latest > 90) {
+      setShadow(true);
+    } else {
+      setShadow(false);
+    }
+
+    console.log(latest, prev);
+  });
 
   // Animation for the mobile menu - useAnimate
   const [scope, animate] = useAnimate();
@@ -35,15 +59,42 @@ const Navbar = () => {
 
   const toggleMobileMenu = () => {
     setShowMobileMenu(!showMobileMenu);
+
+    if (showMobileMenu === false) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
   };
 
   return (
     <>
       <motion.nav
         initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        ref={targetRef}
-        className="fixed w-full h-24 z-40 flex items-center justify-between px-5 "
+        animate={[
+          { y: 0 },
+          hidden ? "hidden" : "visible",
+          shadow ? "shadow" : "noShadow",
+          showMobileMenu ? "backgroundTransparent" : "backgroundColor",
+        ]}
+        variants={{
+          visible: { y: 0, transition: { duration: 0.5 } },
+          hidden: { y: -100, transition: { duration: 0.5 } },
+          shadow: {
+            boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
+            backgroundColor: "#252a34",
+          },
+          noShadow: { boxShadow: "none", backgroundColor: "#252a34" },
+          backgroundColor: {
+            backgroundColor: "transparent",
+            transition: { delay: 0.5 },
+          },
+          backgroundTransparent: {
+            backgroundColor: "transparent",
+            boxShadow: "none",
+          },
+        }}
+        className={`fixed w-full h-24 z-40 flex items-center justify-between px-5`}
       >
         <div onClick={goBack} className="hover:cursor-pointer">
           <svg
@@ -89,7 +140,7 @@ const Navbar = () => {
 
           <span
             id="exit"
-            className="absolute text-[2.5rem] opacity-0 text-secondary material-symbols-outlined"
+            className="absolute z-40 text-[2.5rem] opacity-0 text-secondary material-symbols-outlined"
           >
             close
           </span>

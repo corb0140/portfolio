@@ -29,7 +29,7 @@ const MobileNavMenu = () => {
 
   return (
     <>
-      <div className="fixed z-20 top-0 h-full w-full bg-black bg-opacity-30 blur-md"></div>
+      <div className="fixed z-20 top-0 h-full w-full bg-black bg-opacity-80"></div>
 
       <motion.div
         variants={menuVariants}

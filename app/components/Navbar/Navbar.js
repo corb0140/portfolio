@@ -37,8 +37,6 @@ const Navbar = () => {
     } else {
       setShadow(false);
     }
-
-    console.log(latest, prev);
   });
 
   // Animation for the mobile menu - useAnimate

@@ -106,7 +106,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed w-full h-24 z-10 flex items-center justify-between px-5 ">
+      <nav className="fixed w-full h-24 z-40 flex items-center justify-between px-5 ">
         <div onClick={goBack} className="hover:cursor-pointer">
           <svg
             viewBox="0 0 200 200"

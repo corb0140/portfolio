@@ -27,6 +27,7 @@ module.exports = {
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],
         Fira: ["Fira Mono", "monospace"],
+        Roboto: ["Roboto", "sans-serif"],
       },
     },
   },

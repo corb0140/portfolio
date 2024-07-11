@@ -1,15 +1,103 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, useAnimate } from "framer-motion";
 
 import MobileNavMenu from "@/app/Modals/MobileNavMenu";
 
 const Navbar = () => {
+  const [scope, animate] = useAnimate();
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const router = useRouter();
 
   const goBack = () => {
     router.back();
+  };
+
+  const menuAnimation = async () => {
+    if (showMobileMenu === false) {
+      await animate(
+        "#menuLine_1",
+        {
+          width: 0,
+          opacity: 0,
+        },
+        {
+          duration: 0.2,
+        }
+      );
+      await animate(
+        "#menuLine_2",
+        {
+          width: 0,
+          opacity: 0,
+        },
+        {
+          duration: 0.2,
+        }
+      );
+      await animate(
+        "#menuLine_3",
+        {
+          width: "0",
+          opacity: 0,
+        },
+        {
+          duration: 0.2,
+        }
+      );
+      await animate(
+        "#exit",
+        {
+          rotate: 360,
+          opacity: 1,
+        },
+        {
+          duration: 0.5,
+        }
+      );
+    } else {
+      await animate(
+        "#exit",
+        {
+          rotate: 0,
+          opacity: 0,
+        },
+        {
+          duration: 0.5,
+        }
+      );
+      await animate(
+        "#menuLine_1",
+        {
+          opacity: 1,
+          width: "2.5rem",
+        },
+        {
+          duration: 0.2,
+          delay: 0.2,
+        }
+      );
+      await animate(
+        "#menuLine_2",
+        {
+          opacity: 1,
+          width: "1.75rem",
+        },
+        {
+          duration: 0.2,
+        }
+      );
+      await animate(
+        "#menuLine_3",
+        {
+          opacity: 1,
+          width: "1rem",
+        },
+        {
+          duration: 0.2,
+        }
+      );
+    }
   };
 
   const toggleMobileMenu = () => {
@@ -42,20 +130,35 @@ const Navbar = () => {
         </div>
 
         <div
-          className="flex flex-col gap-[0.4rem] [transform:rotateY(180deg)] hover:cursor-pointer"
-          onClick={toggleMobileMenu}
+          className="relative flex flex-col gap-[0.4rem] [transform:rotateY(180deg)] hover:cursor-pointer"
+          onClick={() => {
+            toggleMobileMenu(), menuAnimation();
+          }}
+          ref={scope}
         >
-          <div className="h-[.2rem] w-10 bg-secondary rounded-lg "></div>
-          <div className="h-[.2rem] w-7 bg-secondary rounded-lg "></div>
-          <div className="h-[.2rem] w-4 bg-secondary rounded-lg "></div>
+          <div
+            id="menuLine_1"
+            className="h-[.2rem] w-10 bg-secondary rounded-lg "
+          ></div>
+          <div
+            id="menuLine_2"
+            className="h-[.2rem] w-7 bg-secondary rounded-lg "
+          ></div>
+          <div
+            id="menuLine_3"
+            className="h-[.2rem] w-4 bg-secondary rounded-lg "
+          ></div>
+
+          <span
+            id="exit"
+            className="absolute text-[2.5rem] opacity-0 text-secondary material-symbols-outlined"
+          >
+            close
+          </span>
         </div>
       </nav>
 
-      {showMobileMenu && (
-        <AnimatePresence initial={false}>
-          <MobileNavMenu />
-        </AnimatePresence>
-      )}
+      <AnimatePresence>{showMobileMenu && <MobileNavMenu />} </AnimatePresence>
     </>
   );
 };

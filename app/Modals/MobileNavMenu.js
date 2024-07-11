@@ -1,7 +1,32 @@
-import { useAnimate } from "framer-motion";
+"use client";
+
+import { useAnimate, motion, AnimatePresence } from "framer-motion";
 
 const MobileNavMenu = () => {
   const [scope, animate] = useAnimate();
+
+  const menuVariants = {
+    hidden: {
+      opacity: 0,
+      x: 100,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.5,
+        type: "spring",
+        stiffness: 200,
+      },
+    },
+    exit: {
+      opacity: 0,
+      x: 100,
+      transition: {
+        duration: 0.3,
+      },
+    },
+  };
 
   const mouseEnter = async () => {
     animate(
@@ -31,10 +56,14 @@ const MobileNavMenu = () => {
 
   return (
     <>
-      <div className="fixed top-0  h-full w-full bg-black bg-opacity-30 blur-md"></div>
-      <div
-        className="fixed top-0 right-0 h-full w-64 bg-primary flex flex-col 
-      items-center justify-center gap-14"
+      <div className="fixed top-0 h-full w-full bg-black bg-opacity-30 blur-md"></div>
+
+      <motion.div
+        variants={menuVariants}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+        className="fixed top-0 right-0 h-full w-64 translate-x-64 bg-primary flex flex-col items-center justify-center gap-14"
       >
         <ul className="flex flex-col gap-5 text-sm">
           <li className="flex flex-col items-center gap-1">
@@ -89,7 +118,7 @@ const MobileNavMenu = () => {
           </div>
           <div className="bg-secondary h-full w-full absolute top-0 left-0 rounded-md"></div>
         </button>
-      </div>
+      </motion.div>
     </>
   );
 };

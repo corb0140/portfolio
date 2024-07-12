@@ -60,7 +60,7 @@ const About = () => {
   };
 
   return (
-    <div className="h-auto py-5 px-10 flex flex-col">
+    <section id="about" className="h-auto py-5 px-10 flex flex-col">
       <SectionTitle number="01" title="About Me" />
 
       <p className="text-sm tracking-tighter pb-5">
@@ -100,7 +100,7 @@ const About = () => {
           className="absolute top-2 left-2 h-full w-full rounded-md border-2 border-secondary"
         ></div>
       </div>
-    </div>
+    </section>
   );
 };
 

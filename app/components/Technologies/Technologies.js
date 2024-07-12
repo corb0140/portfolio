@@ -4,7 +4,10 @@ import { icons } from "@/app/UI/Icons/Icons";
 
 const Technologies = () => {
   return (
-    <div className="h-auto px-10 py-16 flex flex-col gap-5">
+    <section
+      id="technologies"
+      className="h-auto px-10 py-16 flex flex-col gap-5"
+    >
       <SectionTitle number="02" title="Technologies" />
 
       <p className="text-[.9rem] tracking-wider">
@@ -26,7 +29,7 @@ const Technologies = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

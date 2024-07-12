@@ -2,6 +2,7 @@
 
 import About from "@/app/components/About/About";
 import Banner from "@/app/components/Banner/Banner";
+import Contact from "@/app/components/Contact/Contact";
 import Navbar from "@/app/components/Navbar/Navbar";
 import Projects from "@/app/components/Projects/Projects";
 import Technologies from "@/app/components/Technologies/Technologies";
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <Technologies />
       <Projects />
+      <Contact />
     </div>
   );
 }

@@ -5,14 +5,14 @@ import Image from "next/image";
 
 const Projects = () => {
   return (
-    <div className="h-auto px-10 py-16">
+    <section id="projects" className="h-auto px-10 py-16">
       <SectionTitle number="03" title="Projects" />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 px-2">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="relative h-auto w-full rounded-[.5rem] shadow-[.5px_.5px_.5px_#ff2e63]
+            className="relative h-auto w-full rounded-[.5rem] shadow-[inset_1px_1px_.5px_#ff2e63] 
             bg-primary bg-opacity-[.96] px-5 py-16"
           >
             <Image
@@ -54,7 +54,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

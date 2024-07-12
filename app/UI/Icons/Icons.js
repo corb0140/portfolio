@@ -11,4 +11,6 @@ export const icons = [
   { icon: <Icon icon="logos:react" /> },
   { icon: <Icon icon="logos:nextjs-icon" /> },
   { icon: <Icon icon="skill-icons:github-light" /> },
+  { icon: <Icon icon="logos:figma" /> },
+  { icon: <Icon icon="skill-icons:expressjs-light" /> },
 ];

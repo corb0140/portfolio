@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <section
       id="banner"
-      className="banner h-screen w-full px-5 flex flex-col justify-center"
+      className="banner h-screen w-full px-10 flex flex-col justify-center"
     >
       <p className="text-secondary pb-4">Hi, my name is</p>
       <p className="text-4xl font-bold font-Roboto tracking-wide pb-2">

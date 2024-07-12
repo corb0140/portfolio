@@ -60,7 +60,7 @@ const About = () => {
   };
 
   return (
-    <div className="h-auto p-5 flex flex-col">
+    <div className="h-auto py-5 px-10 flex flex-col">
       <SectionTitle number="01" title="About Me" />
 
       <p className="text-sm tracking-tighter pb-5">

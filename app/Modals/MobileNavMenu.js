@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Button from "../Buttons/Button";
+import Button from "@/app/UI/Buttons/Button";
 
 const MobileNavMenu = () => {
   const menuVariants = {

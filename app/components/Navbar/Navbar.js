@@ -9,7 +9,7 @@ import {
 } from "framer-motion";
 
 import MobileNavMenu from "@/app/Modals/MobileNavMenu";
-import { openMenu, closeMenu } from "@/app/MenuAnimation/MenuAnimation";
+import { openMenu, closeMenu } from "@/app/UI/MenuAnimation/MenuAnimation";
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -44,13 +44,13 @@ const Navbar = () => {
   const menuAnimation = async () => {
     if (showMobileMenu === false) {
       {
-        openMenu.map((item) => {
-          animate(item.id, item);
+        openMenu.map(async (item) => {
+          await animate(item.id, item, { duration: 0.5 });
         });
       }
     } else {
-      closeMenu.map((item) => {
-        animate(item.id, item);
+      closeMenu.map(async (item) => {
+        await animate(item.id, item, { duration: 0.5 });
       });
     }
   };
@@ -82,9 +82,9 @@ const Navbar = () => {
             boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
             backgroundColor: "#252a34",
           },
-          noShadow: { boxShadow: "none", backgroundColor: "#252a34" },
+          noShadow: { boxShadow: "none", backgroundColor: "none" },
           backgroundColor: {
-            backgroundColor: "transparent",
+            backgroundColor: "#252a34",
             transition: { delay: 0.5 },
           },
           backgroundTransparent: {

@@ -1,4 +1,4 @@
-import Button from "@/app/Buttons/Button";
+import Button from "@/app/UI/Buttons/Button";
 import React from "react";
 
 const Banner = () => {

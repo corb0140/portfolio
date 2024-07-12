@@ -8,6 +8,8 @@ import {
   useMotionValueEvent,
 } from "framer-motion";
 
+// close the mobile menu when user selects a menu item
+
 import MobileNavMenu from "@/app/Modals/MobileNavMenu";
 import { openMenu, closeMenu } from "@/app/UI/MenuAnimation/MenuAnimation";
 

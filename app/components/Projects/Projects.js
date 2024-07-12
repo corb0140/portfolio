@@ -12,8 +12,8 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="relative h-auto w-full rounded-[.5rem] shadow-[inset_1px_1px_.5px_#ff2e63] 
-            bg-primary bg-opacity-[.96] px-5 py-16"
+            className="relative h-auto w-full rounded-[.44rem] shadow-[.4px_1px_1px_#ff2e63]
+            bg-primary bg-opacity-[.99] px-5 py-16"
           >
             <Image
               src={project.img}

@@ -10,7 +10,7 @@ import {
 
 // close the mobile menu when user selects a menu item
 
-import MobileNavMenu from "@/app/Modals/MobileNavMenu";
+import MobileNavMenu from "@/app/UI/Modals/MobileNavMenu";
 import { openMenu, closeMenu } from "@/app/UI/MenuAnimation/MenuAnimation";
 
 const Navbar = () => {
@@ -43,8 +43,8 @@ const Navbar = () => {
 
   // Animation for the mobile menu - useAnimate
   const [scope, animate] = useAnimate();
-  const menuAnimation = async () => {
-    if (showMobileMenu === false) {
+  const menuAnimation = async (close) => {
+    if (showMobileMenu === close) {
       {
         openMenu.map(async (item) => {
           await animate(item.id, item, { duration: 0.5 });
@@ -57,8 +57,12 @@ const Navbar = () => {
     }
   };
 
-  const toggleMobileMenu = () => {
-    setShowMobileMenu(!showMobileMenu);
+  const toggleMobileMenu = (close) => {
+    if (close === false) {
+      setShowMobileMenu(true);
+    } else {
+      setShowMobileMenu(false);
+    }
 
     if (showMobileMenu === false) {
       document.body.style.overflow = "hidden";
@@ -121,7 +125,7 @@ const Navbar = () => {
         <div
           className="relative flex flex-col gap-[0.4rem] [transform:rotateY(180deg)] hover:cursor-pointer"
           onClick={() => {
-            toggleMobileMenu(), menuAnimation();
+            toggleMobileMenu(showMobileMenu), menuAnimation(showMobileMenu);
           }}
           ref={scope}
         >
@@ -147,7 +151,11 @@ const Navbar = () => {
         </div>
       </motion.nav>
 
-      <AnimatePresence>{showMobileMenu && <MobileNavMenu />} </AnimatePresence>
+      <AnimatePresence>
+        {showMobileMenu && (
+          <MobileNavMenu close={toggleMobileMenu} animate={menuAnimation} />
+        )}
+      </AnimatePresence>
     </>
   );
 };

@@ -2,8 +2,9 @@
 
 import { motion } from "framer-motion";
 import Button from "@/app/UI/Buttons/Button";
+import Link from "next/link";
 
-const MobileNavMenu = () => {
+const MobileNavMenu = ({ close, animate }) => {
   const menuVariants = {
     hidden: {
       opacity: 0,
@@ -35,45 +36,61 @@ const MobileNavMenu = () => {
         variants={menuVariants}
         initial="hidden"
         animate="visible"
-        exit="exit"
+        exit={`${close === true ? "exit" : ""}`}
         className="fixed z-30 top-0 right-0 h-full w-64 translate-x-64 bg-primary flex flex-col items-center justify-center gap-14"
       >
         <ul className="flex flex-col gap-5 text-sm">
           <li className="flex flex-col items-center gap-1">
             <span className="text-secondary">01.</span>
-            <a
+            <Link
+              onClick={() => {
+                close();
+                animate();
+              }}
               href="#about"
               className="hover:text-secondary transition duration-300"
             >
               About
-            </a>
+            </Link>
           </li>
           <li className="flex flex-col items-center gap-1">
             <span className="text-secondary">02.</span>
-            <a
+            <Link
+              onClick={() => {
+                close();
+                animate();
+              }}
               href="#technologies"
               className="hover:text-secondary transition duration-300"
             >
               Technologies
-            </a>
+            </Link>
           </li>
           <li className="flex flex-col items-center gap-1">
             <span className="text-secondary">03.</span>
-            <a
+            <Link
+              onClick={() => {
+                close();
+                animate();
+              }}
               href="#projects"
               className="hover:text-secondary transition duration-300"
             >
               Projects
-            </a>
+            </Link>
           </li>
           <li className="flex flex-col items-center gap-1">
             <span className="text-secondary">04.</span>
-            <a
+            <Link
+              onClick={() => {
+                close();
+                animate();
+              }}
               href="#contact"
               className="hover:text-secondary transition duration-300"
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
 

@@ -20,7 +20,7 @@ const Footer = () => {
           );
         })}
       </div>
-      <p className="text-sm">Built by Mark Corbin</p>
+      <p className="text-sm">Built by Mark Pierre Corbin</p>
     </div>
   );
 };

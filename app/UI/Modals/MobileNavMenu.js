@@ -36,7 +36,7 @@ const MobileNavMenu = ({ close, animate }) => {
         variants={menuVariants}
         initial="hidden"
         animate="visible"
-        exit={`${close === true ? "exit" : ""}`}
+        exit="exit"
         className="fixed z-30 top-0 right-0 h-full w-64 translate-x-64 bg-primary flex flex-col items-center justify-center gap-14"
       >
         <ul className="flex flex-col gap-5 text-sm">

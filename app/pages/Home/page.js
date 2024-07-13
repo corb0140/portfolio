@@ -8,6 +8,8 @@ import Navbar from "@/app/components/Navbar/Navbar";
 import Projects from "@/app/components/Projects/Projects";
 import Technologies from "@/app/components/Technologies/Technologies";
 
+import { useScroll } from "framer-motion";
+
 export default function Home() {
   return (
     <div>

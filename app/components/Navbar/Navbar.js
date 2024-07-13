@@ -42,16 +42,16 @@ const Navbar = () => {
   // Animation for the mobile menu - useAnimate
   const [scope, animate] = useAnimate();
   const menuAnimation = async (close) => {
-    if (showMobileMenu === close) {
-      {
+    {
+      if (close === false) {
         openMenu.map(async (item) => {
           await animate(item.id, item, { duration: 0.5 });
         });
+      } else {
+        closeMenu.map(async (item) => {
+          await animate(item.id, item, { duration: 0.5 });
+        });
       }
-    } else {
-      closeMenu.map(async (item) => {
-        await animate(item.id, item, { duration: 0.5 });
-      });
     }
   };
 

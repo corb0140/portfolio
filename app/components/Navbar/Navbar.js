@@ -16,7 +16,7 @@ const Navbar = () => {
   const router = useRouter();
 
   const goBack = () => {
-    router.back();
+    router.push("/");
   };
 
   // Animation for the navbar - useScroll

@@ -12,7 +12,7 @@ const Technologies = () => {
 
       <p className="text-[.9rem] tracking-wider">
         I&apos;ve been doing web development for about a year and a half now,
-        and I&apos;m eager to learn more in the fast growing tech industry.
+        and I&apos;m eager to learn more in this fast growing tech industry.
       </p>
 
       <p className="uppercase font-semibold text-[.9rem] text-center tracking-wider pt-10">

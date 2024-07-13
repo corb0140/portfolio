@@ -63,7 +63,7 @@ const About = () => {
     <section id="about" className="h-auto py-5 px-10 flex flex-col">
       <SectionTitle number="01" title="About Me" />
 
-      <p className="text-sm tracking-tighter pb-5">
+      <p className="text-sm md:text-[1rem] tracking-tight pb-5">
         Hey! My name is Mark. As a full-stack developer currently enrolled at
         Algonquin college, I am passionate about blending creativity with
         technology. With a strong foundation in front-end and back-end
@@ -81,7 +81,7 @@ const About = () => {
         onMouseEnter={mouseEnter}
         onMouseLeave={mouseLeave}
         ref={scope}
-        className="relative h-52 w-52 self-center"
+        className="relative h-64 w-64 self-center"
       >
         <div id="image" className="absolute h-full w-full  z-10">
           <div

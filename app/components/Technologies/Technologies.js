@@ -10,12 +10,12 @@ const Technologies = () => {
     >
       <SectionTitle number="02" title="Technologies" />
 
-      <p className="text-[.9rem] tracking-wider">
+      <p className="text-[.9rem] md:text-[1rem] tracking-wider">
         I&apos;ve been doing web development for about a year and a half now,
         and I&apos;m eager to learn more in this fast growing tech industry.
       </p>
 
-      <p className="uppercase font-semibold text-[.9rem] text-center tracking-wider pt-10">
+      <p className="uppercase font-semibold text-[.9rem] md:text-[1rem] text-center tracking-wider pt-10">
         Here are the technologies I am familiar with:
       </p>
 
@@ -23,7 +23,7 @@ const Technologies = () => {
         {icons.map((icon, index) => (
           <div
             key={index}
-            className="text-[5rem] opacity-40 hover:opacity-100 hover:scale-[1.2] transition duration-500"
+            className="text-[5rem] md:text-[6rem] opacity-40 hover:opacity-100 hover:scale-[1.2] transition duration-500"
           >
             {icon.icon}
           </div>

@@ -8,7 +8,7 @@ const Projects = () => {
     <section id="projects" className="h-auto px-10 py-16">
       <SectionTitle number="03" title="Projects" />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 px-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 px-2 md:px-0">
         {projects.map((project, index) => (
           <div
             key={index}

@@ -12,7 +12,7 @@ const Contact = () => {
           Get In Touch
         </h2>
 
-        <p className="text-center text-sm px-5 pt-5 pb-10">
+        <p className="text-center text-sm md:text-[1rem] px-5 pt-6 pb-10">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
           doloremque magnam delectus minima amet iste facere, hic esse ad fugit!
         </p>

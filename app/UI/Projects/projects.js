@@ -54,7 +54,7 @@ export const projects = [
   {
     img: smoothie,
     featured: "Featured Project",
-    title: "Smoothies R Us",
+    title: "Smoothie Hut",
     description:
       "A smoothie shop website showcasing different flavors and prices. Users can add items to the cart and view the total price, see past orders, and contact the shop.",
     technologies: [

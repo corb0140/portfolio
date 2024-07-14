@@ -5,7 +5,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className="h-auto w-full p-10 flex flex-col items-center gap-y-8">
-      <div className="flex justify-center gap-x-10">
+      <div className="flex justify-center gap-x-10 lg:hidden">
         {socials.map((social, index) => {
           return (
             <div key={index} className="flex flex-col">

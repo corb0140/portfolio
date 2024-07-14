@@ -63,8 +63,8 @@ const About = () => {
     <section id="about" className="h-auto py-5 px-10 lg:px-72 flex flex-col">
       <SectionTitle number="01" title="About Me" />
 
-      <div className="lg:flex lg:pt-10 gap-x-5">
-        <p className="text-sm md:text-[1rem] tracking-tight  leading-7 pb-5 lg:w-[55%]">
+      <div className="flex flex-col lg:flex-row lg:pt-10 lg:gap-x-5">
+        <p className="text-sm md:text-[1rem] tracking-tight leading-7 pb-5 lg:w-[55%]">
           Hey! My name is Mark. As a full-stack developer currently enrolled at
           Algonquin college, I am passionate about blending creativity with
           technology. With a strong foundation in front-end and back-end

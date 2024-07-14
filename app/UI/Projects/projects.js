@@ -2,10 +2,13 @@ import { Icon } from "@iconify/react";
 import bookkeeper from "@/public/images/bookkeeper.png";
 import picture from "@/public/images/picture.png";
 import smoothie from "@/public/images/smoothie.jpg";
+import bookkeeperLg from "@/public/images/bookkeeper-lg.png";
+import pictureLg from "@/public/images/picture-lg.png";
 
 export const projects = [
   {
     img: bookkeeper,
+    imgLg: bookkeeperLg,
     featured: "Featured Project",
     title: "Bookkeeper's Edge",
     description:
@@ -26,6 +29,7 @@ export const projects = [
   },
   {
     img: picture,
+    imgLg: pictureLg,
     featured: "Featured Project",
     title: "Picture This",
     description:
@@ -53,6 +57,7 @@ export const projects = [
   },
   {
     img: smoothie,
+    imgLg: smoothie,
     featured: "Featured Project",
     title: "Smoothie Hut",
     description:

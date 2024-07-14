@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Button from "@/app/UI/Buttons/Button";
 import Link from "next/link";
 
-const MobileNavMenu = ({ close, animate }) => {
+const NavMenu = ({ close, animate }) => {
   const menuVariants = {
     hidden: {
       opacity: 0,
@@ -100,4 +100,4 @@ const MobileNavMenu = ({ close, animate }) => {
   );
 };
 
-export default MobileNavMenu;
+export default NavMenu;

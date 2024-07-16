@@ -21,7 +21,7 @@ const Projects = () => {
               }`}
             >
               <Image
-                src={window.innerWidth >= 1024 ? project.imgLg : project.img}
+                src={project.imgLg}
                 alt={project.title}
                 width={500}
                 height={300}

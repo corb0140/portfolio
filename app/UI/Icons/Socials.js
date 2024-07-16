@@ -14,7 +14,7 @@ export const socials = [
     link: "https://profile.indeed.com/",
   },
   {
-    icon: <Icon icon="line-md:twitter-x" />,
+    icon: <Icon icon="ri:twitter-x-line" />,
     link: "https://x.com/MCorbin1608",
   },
   {

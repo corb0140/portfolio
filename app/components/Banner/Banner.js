@@ -1,5 +1,5 @@
 import Button from "@/app/UI/Buttons/Button";
-import React from "react";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -21,7 +21,9 @@ const Banner = () => {
         expedita!
       </p>
 
-      <Button design={"relative h-16 w-64 top-12"} text={"Contact Me"} />
+      <Link href="mailto:markpc1608@gmail.com">
+        <Button design={"relative h-16 w-64 top-12"} text={"Contact Me"} />
+      </Link>
     </section>
   );
 };

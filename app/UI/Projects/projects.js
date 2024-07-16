@@ -13,7 +13,13 @@ export const projects = [
     title: "Bookkeeper's Edge",
     description:
       "A portfolio website for an entrepreneur bookkeeper. Minimalistic design with a focus on the services provided, and contact information.",
-    technologies: ["VS Code", "NextJS", "Tailwind CSS", "Framer Motion"],
+    technologies: [
+      "VS Code",
+      "NextJS",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Responsive",
+    ],
     github: {
       icon: <Icon icon="mingcute:github-line" />,
       link: "https://github.com/corb0140/bookkeepers-edge",
@@ -41,6 +47,7 @@ export const projects = [
       "CSS",
       "Pixabay API",
       "Mediapipe API",
+      "Responsive",
     ],
     github: {
       icon: <Icon icon="mingcute:github-line" />,

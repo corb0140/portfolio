@@ -13,8 +13,9 @@ const Contact = () => {
         </h2>
 
         <p className="text-center text-sm md:text-[1rem] px-5 pt-6 pb-6 lg:px-24 leading-6">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
-          doloremque magnam delectus minima amet iste facere, hic esse ad fugit!
+          I&apos;m currently looking for new opportunities. If you have a
+          project in mind, or just want to say hello, feel free to send me an
+          email. I&apos;ll get back to you as soon as I can!
         </p>
 
         <Link href="mailto:markpc1608@gmail.com">

@@ -15,10 +15,9 @@ const Banner = () => {
         I am a full-stack developer.
       </p>
       <p className="text-gray-300 text-[1rem] tracking-tighter lg:w-[60%]">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet quae
-        sunt a quidem, nemo aperiam corporis ut provident! Cupiditate asperiores
-        accusamus natus tempore autem veritatis dolore molestiae quis neque
-        expedita!
+        Passionate Junior Web Developer with strong skills in HTML, CSS, and
+        JavaScript. Eager to learn and contribute to innovative projects,
+        enhancing user experiences through creative and efficient web solutions.
       </p>
 
       <Link href="mailto:markpc1608@gmail.com">

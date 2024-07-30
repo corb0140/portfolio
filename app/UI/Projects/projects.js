@@ -62,34 +62,34 @@ export const projects = [
       link: "https://corb0140.github.io/final-project/",
     },
   },
-  {
-    img: smoothie,
-    imgLg: smoothie,
-    featured: "Featured Project",
-    title: "Smoothie Hut",
-    description:
-      "A smoothie shop website showcasing different flavors and prices. Users can add items to the cart and view the total price, see past orders, and contact the shop.",
-    technologies: [
-      "VS Code",
-      "NextJS",
-      "Tailwind CSS",
-      "Framer Motion",
-      "MongoDB",
-      "Express",
-      "NodeJS",
-      "onrender",
-    ],
-    github: {
-      icon: <Icon icon="mingcute:github-line" />,
-      link: "#",
-    },
-    website: {
-      icon: (
-        <span className="text-[1.5rem] material-symbols-outlined">
-          open_in_new
-        </span>
-      ),
-      link: "#",
-    },
-  },
+  // {
+  //   img: smoothie,
+  //   imgLg: smoothie,
+  //   featured: "Featured Project",
+  //   title: "Smoothie Hut",
+  //   description:
+  //     "A smoothie shop website showcasing different flavors and prices. Users can add items to the cart and view the total price, see past orders, and contact the shop.",
+  //   technologies: [
+  //     "VS Code",
+  //     "NextJS",
+  //     "Tailwind CSS",
+  //     "Framer Motion",
+  //     "MongoDB",
+  //     "Express",
+  //     "NodeJS",
+  //     "onrender",
+  //   ],
+  //   github: {
+  //     icon: <Icon icon="mingcute:github-line" />,
+  //     link: "#",
+  //   },
+  //   website: {
+  //     icon: (
+  //       <span className="text-[1.5rem] material-symbols-outlined">
+  //         open_in_new
+  //       </span>
+  //     ),
+  //     link: "#",
+  //   },
+  // },
 ];

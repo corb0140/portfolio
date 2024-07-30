@@ -12,7 +12,7 @@ const Banner = () => {
         Mark Corbin.
       </p>
       <p className="text-2xl md:text-5xl lg:text-6xl font-bold font-Roboto tracking-wide text-gray-300 pb-10">
-        I am a full-stack developer.
+        I am a web developer.
       </p>
       <p className="text-gray-300 text-[1rem] tracking-tighter lg:w-[60%]">
         Passionate Junior Web Developer with strong skills in HTML, CSS, and

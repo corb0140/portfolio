@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react";
 import bookkeeper from "@/public/images/bookkeeper.png";
 import picture from "@/public/images/picture.png";
-import smoothie from "@/public/images/smoothie.jpg";
+import dessert from "@/public/images/dessert.png";
 import bookkeeperLg from "@/public/images/bookkeeper-lg.png";
 import pictureLg from "@/public/images/picture-lg.png";
 
@@ -62,34 +62,25 @@ export const projects = [
       link: "https://corb0140.github.io/final-project/",
     },
   },
-  // {
-  //   img: smoothie,
-  //   imgLg: smoothie,
-  //   featured: "Featured Project",
-  //   title: "Smoothie Hut",
-  //   description:
-  //     "A smoothie shop website showcasing different flavors and prices. Users can add items to the cart and view the total price, see past orders, and contact the shop.",
-  //   technologies: [
-  //     "VS Code",
-  //     "NextJS",
-  //     "Tailwind CSS",
-  //     "Framer Motion",
-  //     "MongoDB",
-  //     "Express",
-  //     "NodeJS",
-  //     "onrender",
-  //   ],
-  //   github: {
-  //     icon: <Icon icon="mingcute:github-line" />,
-  //     link: "#",
-  //   },
-  //   website: {
-  //     icon: (
-  //       <span className="text-[1.5rem] material-symbols-outlined">
-  //         open_in_new
-  //       </span>
-  //     ),
-  //     link: "#",
-  //   },
-  // },
+  {
+    img: dessert,
+    imgLg: dessert,
+    featured: "Featured Project",
+    title: "Dessert E-Commerce",
+    description:
+      "A dessert e-commerce website with a focus on the products. Users, can view item name and price, and can add or remove items products to the cart, and checkout.",
+    technologies: ["VS Code", "NextJS", "Redux", "Tailwind CSS", "Responsive"],
+    github: {
+      icon: <Icon icon="mingcute:github-line" />,
+      link: "https://github.com/corb0140/desserts",
+    },
+    website: {
+      icon: (
+        <span className="text-[1.5rem] material-symbols-outlined">
+          open_in_new
+        </span>
+      ),
+      link: "https://desserts-chi.vercel.app/",
+    },
+  },
 ];

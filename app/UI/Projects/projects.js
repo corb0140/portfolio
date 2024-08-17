@@ -10,7 +10,7 @@ export const projects = [
     img: bookkeeper,
     imgLg: bookkeeperLg,
     featured: "Featured Project",
-    title: "Bookkeeper's Edge",
+    title: "Bookkeeper's Edge (incomplete)",
     description:
       "A portfolio website for an entrepreneur bookkeeper. Minimalistic design with a focus on the services provided, and contact information.",
     technologies: [

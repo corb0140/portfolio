@@ -10,9 +10,6 @@ import Technologies from "@/app/components/Technologies/Technologies";
 import SocialsDesktop from "@/app/UI/SocialsDesktop/SocialsDesktop";
 import EmailDesktop from "@/app/UI/EmailDesktop/EmailDesktop";
 
-// import { useScroll } from "framer-motion";
-// import { useState, useEffect } from "react";
-
 export default function Home() {
   return (
     <div>

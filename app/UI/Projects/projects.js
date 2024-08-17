@@ -1,5 +1,6 @@
 import { Icon } from "@iconify/react";
 import bookkeeper from "@/public/images/bookkeeper.png";
+import worldCountries from "@/public/images/world-countries.png";
 import picture from "@/public/images/picture.png";
 import dessert from "@/public/images/dessert.png";
 import bookkeeperLg from "@/public/images/bookkeeper-lg.png";
@@ -7,22 +8,23 @@ import pictureLg from "@/public/images/picture-lg.png";
 
 export const projects = [
   {
-    img: bookkeeper,
-    imgLg: bookkeeperLg,
+    img: worldCountries,
+    imgLg: worldCountries,
     featured: "Featured Project",
-    title: "Bookkeeper's Edge (incomplete)",
+    title: "World Countries",
     description:
-      "A portfolio website for an entrepreneur bookkeeper. Minimalistic design with a focus on the services provided, and contact information.",
+      "A website that displays information about countries using REST countries API. Users can search for countries by name, or region. Users can also view detailed information about a country, including the country's flag, population, and languages spoken.",
     technologies: [
       "VS Code",
       "NextJS",
       "Tailwind CSS",
-      "Framer Motion",
+      "Redux",
       "Responsive",
+      "REST Countries API",
     ],
     github: {
       icon: <Icon icon="mingcute:github-line" />,
-      link: "https://github.com/corb0140/bookkeepers-edge",
+      link: "https://github.com/corb0140/world-countries",
     },
     website: {
       icon: (
@@ -30,7 +32,7 @@ export const projects = [
           open_in_new
         </span>
       ),
-      link: "https://bookkeepers-edge.vercel.app/",
+      link: "https://world-countries-gamma.vercel.app/",
     },
   },
   {

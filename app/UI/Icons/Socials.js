@@ -17,8 +17,4 @@ export const socials = [
     icon: <Icon icon="ri:twitter-x-line" />,
     link: "https://x.com/MCorbin1608",
   },
-  {
-    icon: <Icon icon="simple-icons:leetcode" />,
-    link: "https://leetcode.com/u/Kolizak/",
-  },
 ];

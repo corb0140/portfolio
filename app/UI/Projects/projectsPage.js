@@ -160,7 +160,7 @@ export const projectsPage = [
           open_in_new
         </span>
       ),
-      link: "hhttps://todo-app-six-virid-47.vercel.app/",
+      link: "https://todo-app-six-virid-47.vercel.app/",
     },
   },
 ];

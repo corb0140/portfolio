@@ -15,7 +15,7 @@ const Banner = () => {
         I am a web developer.
       </p>
       <p className="text-gray-300 text-[1rem] tracking-tighter lg:w-[60%]">
-        Passionate Junior Web Developer with strong skills in HTML, CSS, and
+        Passionate web developer with strong skills in HTML, CSS, and
         JavaScript. Eager to learn and contribute to innovative projects,
         enhancing user experiences through creative and efficient web solutions.
       </p>

@@ -249,7 +249,7 @@ const Navbar = () => {
             </Link>
           </li>
 
-          <Link href="/CV/CV.pdf" download>
+          <Link href="/resume/resume.pdf" download>
             <Button design={"relative h-[3rem] w-32"} text={"Resume"} />
           </Link>
         </ul>

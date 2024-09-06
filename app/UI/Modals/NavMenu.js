@@ -94,7 +94,7 @@ const NavMenu = ({ close, animate }) => {
           </li>
         </ul>
 
-        <Link href="/CV/CV.pdf" download>
+        <Link href="/resume/resume.pdf" download>
           <Button design={"relative h-[3.25rem] w-40"} text={"Resume"} />
         </Link>
       </motion.div>

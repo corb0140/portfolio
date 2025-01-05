@@ -2,7 +2,6 @@ import SectionTitle from "@/app/UI/SectionTitles/SectionTitle";
 import { projects } from "@/app/UI/Projects/projects";
 import Link from "next/link";
 import Image from "next/image";
-import Button from "@/app/UI/Buttons/Button";
 
 const Projects = () => {
   return (
@@ -85,10 +84,6 @@ const Projects = () => {
             </div>
           </div>
         ))}
-
-        <Link href="../../pages/Projects">
-          <Button text="View All Projects" design="relative h-14 w-52" />
-        </Link>
       </div>
     </section>
   );

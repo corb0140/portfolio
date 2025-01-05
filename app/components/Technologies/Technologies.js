@@ -19,13 +19,13 @@ const Technologies = () => {
         Here are the technologies I am familiar with:
       </p>
 
-      <div className="grid grid-cols-3 place-items-center gap-x-1 gap-y-8 pt-5">
+      <div className="grid grid-cols-3 place-items-center gap-x-1 gap-y-9 pt-5">
         {icons.map((icon, index) => (
           <div
             key={index}
-            className="text-[5rem] md:text-[6rem] lg:text-[7rem] opacity-40 hover:opacity-100 hover:scale-[1.1] transition duration-500"
+            className="text-[5rem] md:text-[6rem] lg:text-[6.5rem] opacity-40 hover:opacity-100 hover:scale-[1.1] transition duration-500"
           >
-            {icon.icon}
+            {Object.values(icon)}
           </div>
         ))}
       </div>

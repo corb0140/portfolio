@@ -59,18 +59,30 @@ const Navbar = () => {
   };
 
   const toggleMobileMenu = (close) => {
-    if (close === false) {
-      setShowMobileMenu(true);
-    } else {
-      setShowMobileMenu(false);
-    }
+    const newState = close === false;
+    setShowMobileMenu(newState);
 
-    if (showMobileMenu === false) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
+    document.body.style.overflow = newState ? "hidden" : "auto";
   };
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(min-width: 1024px)");
+
+    const handleResize = () => {
+      if (mediaQuery.matches) {
+        setShowMobileMenu(false);
+        menuAnimation(true);
+        document.body.style.overflow = "auto";
+      }
+    };
+
+    mediaQuery.addEventListener("change", handleResize);
+
+    // Cleanup
+    return () => {
+      mediaQuery.removeEventListener("change", handleResize);
+    };
+  }, []);
 
   return (
     <>

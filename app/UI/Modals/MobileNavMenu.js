@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Button from "@/app/UI/Buttons/Button";
 import Link from "next/link";
+import { useEffect } from "react";
 
 const NavMenu = ({ close, animate }) => {
   const menuVariants = {

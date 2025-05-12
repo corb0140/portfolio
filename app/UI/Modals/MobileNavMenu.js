@@ -30,14 +30,14 @@ const NavMenu = ({ close, animate }) => {
 
   return (
     <>
-      <div className="fixed z-20 top-0 h-full w-full bg-black bg-opacity-80"></div>
+      <div className="fixed lg:hidden z-20 top-0 h-full w-full bg-black bg-opacity-80"></div>
 
       <motion.div
         variants={menuVariants}
         initial="hidden"
         animate="visible"
         exit="exit"
-        className="fixed z-30 top-0 right-0 h-full w-64 translate-x-64 bg-primary flex flex-col items-center justify-center gap-14"
+        className="fixed lg:hidden z-30 top-0 right-0 h-full w-64 translate-x-64 bg-primary flex flex-col items-center justify-center gap-14"
       >
         <ul className="flex flex-col gap-5 text-sm">
           <li className="flex flex-col items-center gap-1">

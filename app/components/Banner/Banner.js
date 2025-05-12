@@ -12,12 +12,13 @@ const Banner = () => {
         Mark Corbin.
       </p>
       <p className="text-2xl md:text-5xl lg:text-6xl font-bold font-Roboto tracking-wide text-gray-300 pb-10">
-        I am a web developer.
+        I am a Full-Stack Developer.
       </p>
       <p className="text-gray-300 text-[1rem] tracking-tighter lg:w-[60%]">
-        Passionate web developer with strong skills in HTML, CSS, and
-        JavaScript. Eager to learn and contribute to innovative projects,
-        enhancing user experiences through creative and efficient web solutions.
+        Passionate Full-Stack Developer with a strong foundation in both web and
+        mobile development. I work primarily with the PERN stack and React
+        Native. I enjoy turning ideas into clean, functional apps and learning
+        something new with every project
       </p>
 
       <Link href="mailto:markpc1608@gmail.com">

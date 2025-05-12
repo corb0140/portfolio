@@ -1,4 +1,4 @@
-import { socials } from "@/app/UI/Icons/Socials";
+import { socials } from "@/app/data/Icons/Socials";
 import Link from "next/link";
 
 const SocialsDesktop = () => {

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import me from "@/public/images/me.jpeg";
+import me from "@/public/images/mark.jpg";
 
 import { useAnimate } from "framer-motion";
 import SectionTitle from "@/app/UI/SectionTitles/SectionTitle";
@@ -65,16 +65,16 @@ const About = () => {
 
       <div className="flex flex-col lg:flex-row lg:pt-10 lg:gap-x-5">
         <p className="text-sm md:text-[1rem] tracking-tight leading-7 pb-5 lg:w-[55%]">
-          Hey! My name is Mark. As a web developer currently enrolled at
-          Algonquin college, I am passionate about blending creativity with
-          technology. With a strong foundation in web development, I’m adept at
-          crafting seamless digital experiences. I thrive in team environments,
-          communicate effectively, and love tackling meaningful projects. Eager
-          to keep learning and making great strides through technology.
-          <br />
-          <br />
-          When I&apos;m not coding, I enjoy playing video games, watching TV,
-          and bowling.
+          I&apos;m Mark Corbin, a Full Stack Developer originating Barbados and
+          a graduate of Algonquin College&apos;s Mobile Development and Design
+          program. I’m passionate about building seamless digital experiences by
+          connecting intuitive front-end interfaces with robust back-end
+          systems. I enjoy solving complex problems with clean, efficient code
+          and continuously exploring new technologies to enhance my skills.
+          <br /> <br />
+          When I’m not coding, you’ll find me immersed in video games, watching
+          football (a proud FC Barcelona fan), or learning something new in
+          tech.
         </p>
 
         <div

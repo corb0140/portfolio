@@ -31,7 +31,7 @@ export const projects = [
     img: rockPaperScissors,
     title: "Rock Paper Scissors Game",
     description:
-      "A classic game of rock paper scissors where you play against the computer. The game is built using Nextjs and uses Redux to manage state. It's fully responsive and works on all devices.",
+      "A classic game of rock paper scissors where you play against the computer. The game is built using Nextjs and uses Redux to manage state.",
     technologies: [
       "VS Code",
       "NextJS",

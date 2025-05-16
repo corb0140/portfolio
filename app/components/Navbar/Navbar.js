@@ -9,7 +9,7 @@ import {
 } from "framer-motion";
 
 import MobileNavMenu from "@/app/UI/Modals/MobileNavMenu";
-import { openMenu, closeMenu } from "@/app/UI/MenuAnimation/MenuAnimation";
+import { openMenu, closeMenu } from "@/app/animations/MenuAnimation";
 import Button from "@/app/UI/Buttons/Button";
 
 import Link from "next/link";
@@ -26,6 +26,10 @@ const Navbar = () => {
   const [hidden, setHidden] = useState(false);
   const [shadow, setShadow] = useState(false);
   const { scrollY } = useScroll();
+
+  // show menu based on scrolling up or down
+  // useMotionValueEvent is used to listen to changes in the scrollY value
+  // and trigger the animation based on the scroll direction
   useMotionValueEvent(scrollY, "change", (latest) => {
     const prev = scrollY.getPrevious();
 
@@ -82,6 +86,7 @@ const Navbar = () => {
     return () => {
       mediaQuery.removeEventListener("change", handleResize);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

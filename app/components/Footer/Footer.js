@@ -1,4 +1,4 @@
-import { socials } from "../../data/Icons/Socials";
+import { socials } from "../../data/Socials";
 
 import Link from "next/link";
 

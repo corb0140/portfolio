@@ -1,9 +1,17 @@
 import Button from "@/app/UI/Buttons/Button";
 import Link from "next/link";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const Banner = () => {
+  // Tracking the scroll position relative to ref
+  const { scrollY } = useScroll();
+
+  // Map scroll progress to opacity
+  const opacity = useTransform(scrollY, [0, 600], [1, 0]);
+
   return (
-    <section
+    <motion.div
+      style={{ opacity }}
       id="banner"
       className="banner h-screen w-full px-10 lg:px-64 flex flex-col justify-center"
     >
@@ -24,7 +32,7 @@ const Banner = () => {
       <Link href="mailto:markpc1608@gmail.com">
         <Button design={"relative h-16 w-64 top-12"} text={"Contact Me"} />
       </Link>
-    </section>
+    </motion.div>
   );
 };
 

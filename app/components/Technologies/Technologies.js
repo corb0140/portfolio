@@ -1,7 +1,12 @@
 import SectionTitle from "@/app/UI/SectionTitles/SectionTitle";
 
-import { icons } from "@/app/data/Icons/Icons";
+import { icons } from "@/app/data/Icons";
 import { Icon } from "@iconify/react";
+import {
+  containerVariants,
+  iconVariants,
+} from "@/app/animations/IconAnimations";
+import { motion } from "framer-motion";
 
 const Technologies = () => {
   return (
@@ -16,23 +21,32 @@ const Technologies = () => {
         tech industry.
       </p>
 
-      <p className="uppercase font-semibold text-[.9rem] md:text-[1rem]  text-center tracking-wider pt-10">
+      <p className="uppercase font-semibold text-[.9rem] md:text-[1rem] text-center tracking-wider pt-10">
         Here are the technologies I am familiar with:
       </p>
 
-      <div className="grid grid-cols-3 md:grid-cols-4 place-items-center gap-y-7 pt-5">
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        className="grid grid-cols-3 md:grid-cols-4 place-items-center gap-y-7 pt-5"
+      >
         {icons.map((icon, index) => (
-          <div
+          <motion.div
+            variants={iconVariants}
             key={index}
-            className="text-[5rem] md:text-[5rem] lg:text-[4rem] opacity-40 hover:opacity-100 hover:scale-[1.1] transition duration-500"
+            id={icon.id}
+            className="flex flex-col items-center text-[4.5rem] md:text-[5rem] lg:text-[4rem] opacity-0 scale-75 hover:scale-[1.1] transition duration-500"
           >
             <Icon icon={icon.icon} />
+
             <p className="text-[.7rem] md:text-[.8rem] text-center pt-2">
-              {icon.id}
+              {icon.name}
             </p>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };

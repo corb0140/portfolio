@@ -34,14 +34,20 @@ html {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .custom-grid-rows {
-    grid-template-rows: repeat(4, 15vh);
+    grid-template-rows: repeat(8, 13.5vh);
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 700px) {
   .custom-grid-rows {
-    grid-template-rows: repeat(4, 10vh);
+    grid-template-rows: repeat(8, 15vh);
+  }
+}
+
+@media (min-width: 750px) {
+  .custom-grid-rows {
+    grid-template-rows: repeat(4, 15vh);
   }
 }

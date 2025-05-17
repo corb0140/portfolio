@@ -30,5 +30,5 @@ export const icons = [
   { id: "rds", icon: "logos:aws-rds", name: "RDS" },
   { id: "s3", icon: "logos:aws-s3", name: "S3" },
   { id: "api_gateway", icon: "logos:aws-api-gateway", name: "Api Gateway" },
-  { id: "dynamodb", icon: "devicon:dynamodb", name: "DynamoDB" },
+  { id: "mongodb", icon: "skill-icons:mongodb", name: "MongoDB" },
 ];

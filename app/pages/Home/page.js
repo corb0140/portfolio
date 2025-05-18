@@ -30,6 +30,10 @@ export default function Home() {
       onPointerOver={(e) => {
         const target = e.target;
 
+        if (["button", "a"].includes(target.tagName.toLowerCase())) {
+          setIsHovered(true);
+        }
+
         if (target.closest("button")) {
           setIsHovered(true);
         }
@@ -42,11 +46,10 @@ export default function Home() {
           top: `${position.y}px`,
           left: `${position.x}px`,
           transform: `translate(-50%, -50%) scale(${isHovered ? 3 : 1})`,
-          opacity: isHovered ? 0.5 : 1,
+          // opacity: 0.5,
         }}
-        className={`fixed bg-secondary rounded-full -left-10 -top-10 w-${
-          isHovered ? 8 : 0
-        } h-${isHovered ? 8 : 0} z-50 pointer-events-none`}
+        className={`fixed bg-secondary rounded-full -left-10 -top-10 z-50 pointer-events-none
+        ${isHovered ? "w-8 h-8" : "w-0 h-0"} backdrop-invert bg-secondary/30`}
       ></div>
       <Navbar />
       <Banner />

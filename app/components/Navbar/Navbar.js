@@ -181,9 +181,13 @@ const Navbar = () => {
         </ul>
 
         {/* Resume Link */}
-        <Link className="hidden lg:block" href="/resume/resume.pdf" download>
-          <Button design={"relative h-[3rem] w-32"} text={"Resume"} />
-        </Link>
+
+        <Button
+          design={"relative h-[3rem] w-32 hidden lg:block"}
+          text={"Resume"}
+          href="/resume/resume.pdf"
+          download={true}
+        />
 
         {/* Hamburger Menu */}
         <div

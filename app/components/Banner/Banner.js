@@ -1,5 +1,4 @@
 import Button from "@/app/UI/Buttons/Button";
-import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const Banner = () => {
@@ -29,9 +28,11 @@ const Banner = () => {
         something new with every project
       </p>
 
-      <Link href="mailto:markpc1608@gmail.com">
-        <Button design={"relative h-16 w-64 top-12"} text={"Contact Me"} />
-      </Link>
+      <Button
+        design={"relative h-16 w-64 top-12"}
+        text={"Contact Me"}
+        href={"mailto:markpc1608@gmail.com"}
+      />
     </motion.div>
   );
 };

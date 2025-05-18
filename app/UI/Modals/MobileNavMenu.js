@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import Button from "@/app/UI/Buttons/Button";
 import Link from "next/link";
-import { useEffect } from "react";
 
 const NavMenu = ({ close, animate }) => {
   const menuVariants = {
@@ -95,9 +94,12 @@ const NavMenu = ({ close, animate }) => {
           </li>
         </ul>
 
-        <Link href="/resume/resume.pdf" download>
-          <Button design={"relative h-[3.25rem] w-40"} text={"Resume"} />
-        </Link>
+        <Button
+          design={"relative h-[3.25rem] w-40"}
+          text={"Resume"}
+          href={"/resume/resume.pdf"}
+          download={true}
+        />
       </motion.div>
     </>
   );

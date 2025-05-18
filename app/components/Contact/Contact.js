@@ -18,9 +18,11 @@ const Contact = () => {
           email. I&apos;ll get back to you as soon as I can!
         </p>
 
-        <Link href="mailto:markpc1608@gmail.com">
-          <Button design="relative h-14 w-36" text="Say Hello" />
-        </Link>
+        <Button
+          design="relative h-14 w-36"
+          text="Say Hello"
+          href="mailto:markpc1608@gmail.com"
+        />
       </div>
     </section>
   );

@@ -6,28 +6,6 @@ import rockPaperScissors from "@/public/images/rock-paper-scissors.png";
 
 export const projects = [
   {
-    img: inventory,
-    title: "Inventory Management System",
-    description:
-      "A full-stack inventory management system that allows users to manage their inventory, including adding, updating, and deleting items. Built using Nextjs, TailwindCSS, Node, Express, and PostgreSQL. It's fully responsive and deployed using AWS Amplify, EC2 and RDS.",
-    technologies: [
-      "Next",
-      "NextJS",
-      "Tailwind CSS",
-      "Redux",
-      "Responsive",
-      "REST Countries API",
-    ],
-    github: {
-      icon: <Icon icon="mingcute:github-line" />,
-      link: "https://github.com/corb0140/inventory-management",
-    },
-    website: {
-      icon: <Icon icon="quill:link-out" />,
-      link: "https://main.dkle4bseinws3.amplifyapp.com/",
-    },
-  },
-  {
     img: rockPaperScissors,
     title: "Rock Paper Scissors Game",
     description:

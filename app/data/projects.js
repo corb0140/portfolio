@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react";
 import worldCountries from "@/public/images/world-countries.png";
 import bookkeepersEdge from "@/public/images/bookkeeper-lg.png";
-import inventory from "@/public/images/inventory.png";
+import sweetTooth from "@/public/images/sweet-tooth.png";
 import rockPaperScissors from "@/public/images/rock-paper-scissors.png";
 
 export const projects = [
@@ -69,6 +69,28 @@ export const projects = [
     website: {
       icon: <Icon icon="quill:link-out" />,
       link: "https://bookkeepers-edge.vercel.app/",
+    },
+  },
+  {
+    img: sweetTooth,
+    title: "Ice Cream E-commerce",
+    description:
+      "A full-stack e-commerce website for ice cream products. The website is built using React + vite, ExpressJS, and PostgreSQL. It features a fully functional shopping cart, user authentication, and an admin panel for managing products.",
+    technologies: [
+      "VS Code",
+      "NextJS",
+      "ExpressJS",
+      "MongoDB",
+      "Tailwind CSS",
+      "Responsive",
+    ],
+    github: {
+      icon: <Icon icon="mingcute:github-line" />,
+      link: "https://github.com/corb0140/ice_cream_ecommerce",
+    },
+    website: {
+      icon: <Icon icon="quill:link-out" />,
+      link: "https://ice-cream-ecommerce-pi.vercel.app/",
     },
   },
 ];

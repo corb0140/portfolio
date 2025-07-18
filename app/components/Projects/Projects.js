@@ -14,11 +14,7 @@ const Projects = () => {
             key={index}
             className="group relative overflow-hidden row-span-2 lg:row-span-2 shadow-md rounded-lg flex flex-col gap-2"
           >
-            <Image
-              src={project.img}
-              alt={project.title}
-              className="absolute w-full h-full object-fit"
-            />
+            <Image src={project.img} alt={project.title} className="" />
 
             <div
               className="bg-black/80 absolute -bottom-full group-hover:bottom-0 transition-all duration-500 

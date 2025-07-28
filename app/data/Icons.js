@@ -20,6 +20,7 @@ export const icons = [
     icon: "devicon:reactnative-wordmark",
     name: "React Native",
   },
+  { id: "swift", icon: "logos:swift", name: "Swift" },
   { id: "nextjs", icon: "logos:nextjs-icon", name: "Next.js" },
   { id: "redux", icon: "logos:redux", name: "Redux" },
   { id: "sql", icon: "vscode-icons:file-type-sql", name: "SQL" },

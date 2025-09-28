@@ -20,7 +20,6 @@ export const icons = [
     icon: "devicon:reactnative-wordmark",
     name: "React Native",
   },
-  { id: "swift", icon: "logos:swift", name: "Swift" },
   { id: "nextjs", icon: "logos:nextjs-icon", name: "Next.js" },
   { id: "redux", icon: "logos:redux", name: "Redux" },
   { id: "sql", icon: "vscode-icons:file-type-sql", name: "SQL" },
@@ -29,7 +28,5 @@ export const icons = [
   { id: "figma", icon: "logos:figma", name: "Figma" },
   { id: "materialui", icon: "logos:material-ui", name: "Material UI" },
   { id: "mongodb", icon: "skill-icons:mongodb", name: "MongoDB" },
-  { id: "docker", icon: "logos:docker-icon", name: "Docker" },
   { id: "git", icon: "logos:git-icon", name: "Git" },
-  { id: "jest", icon: "logos:jest", name: "Jest" },
 ];

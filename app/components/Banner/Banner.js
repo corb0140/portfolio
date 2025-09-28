@@ -22,12 +22,11 @@ const Banner = () => {
         I am a Frontend Developer.
       </p>
       <p className="text-gray-300 text-[1rem] tracking-tighter lg:w-[60%]">
-        I&apos;m a Frontend Developer/UI Designer with a strong foundation in
-        both web and mobile development. I work primarily within the React
-        ecosystem and I enjoy turning ideas into clean, functional websites and
-        apps. Though I enjoy working more on the frontend and design, I have
-        some knowledge in backend development using node and express with
-        postgresql and mongodb.
+        I&apos;m a Frontend Developer with a strong foundation in both web and
+        mobile development. I work primarily within the React ecosystem and I
+        enjoy turning ideas into clean, functional websites and apps. Though I
+        enjoy working more on the frontend, I have some knowledge in backend
+        development using node and express with postgresql and mongodb.
       </p>
 
       <Button

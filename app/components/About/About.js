@@ -79,12 +79,13 @@ const About = () => {
           style={{ translateY }}
           className="text-sm md:text-[1rem] tracking-tight leading-7 pb-5 lg:w-[55%]"
         >
-          I&apos;m Mark Corbin, a Full Stack Developer originating Barbados and
-          a graduate of Algonquin College&apos;s Mobile Development and Design
-          program. I’m passionate about building seamless digital experiences by
-          connecting intuitive front-end interfaces with robust back-end
-          systems. I enjoy solving complex problems with clean, efficient code
-          and continuously exploring new technologies to enhance my skills.
+          I&apos;m Mark Corbin, a Frontend Developer/UI Designer originating
+          Barbados and a graduate of Algonquin College&apos;s Mobile Development
+          and Design program. I’m passionate about building seamless digital
+          experiences by creating stylish designs in figma and bringing them to
+          life for the web and mobile. I enjoy solving complex problems with
+          clean, efficient code and continuously exploring new technologies to
+          enhance my skills.
           <br /> <br />
           When I’m not coding, you’ll find me immersed in video games, watching
           football (a proud FC Barcelona fan), or learning something new in

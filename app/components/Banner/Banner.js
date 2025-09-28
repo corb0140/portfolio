@@ -19,13 +19,15 @@ const Banner = () => {
         Mark Corbin.
       </p>
       <p className="text-2xl md:text-5xl lg:text-6xl font-bold font-Roboto tracking-wide text-gray-300 pb-10">
-        I am a Full-Stack Developer.
+        I am a Frontend Developer.
       </p>
       <p className="text-gray-300 text-[1rem] tracking-tighter lg:w-[60%]">
-        Passionate Full-Stack Developer with a strong foundation in both web and
-        mobile development. I work primarily with the PERN stack and React
-        Native. I enjoy turning ideas into clean, functional apps and learning
-        something new with every project
+        I&apos;m a Frontend Developer/UI Designer with a strong foundation in
+        both web and mobile development. I work primarily within the React
+        ecosystem and I enjoy turning ideas into clean, functional websites and
+        apps. Though I enjoy working more on the frontend and design, I have
+        some knowledge in backend development using node and express with
+        postgresql and mongodb.
       </p>
 
       <Button

@@ -1,6 +1,7 @@
 export const icons = [
   { id: "html", icon: "logos:html-5", name: "HTML" },
   { id: "css", icon: "logos:css-3", name: "CSS" },
+  { id: "python", icon: "logos:python", name: "Python" },
   { id: "javascript", icon: "tabler:brand-javascript", name: "JavaScript" },
   {
     id: "typescript",

@@ -6,28 +6,6 @@ import rockPaperScissors from "@/public/images/rock-paper-scissors.png";
 
 export const projects = [
   {
-    img: rockPaperScissors,
-    title: "Rock Paper Scissors Game",
-    description:
-      "A classic game of rock paper scissors where you play against the computer. The game is built using Nextjs and uses Redux to manage state.",
-    technologies: [
-      "VS Code",
-      "NextJS",
-      "Tailwind CSS",
-      "Redux",
-      "Responsive",
-      "REST Countries API",
-    ],
-    github: {
-      icon: <Icon icon="mingcute:github-line" />,
-      link: "https://github.com/corb0140/rock-paper-scissors",
-    },
-    website: {
-      icon: <Icon icon="quill:link-out" />,
-      link: "https://rock-paper-scissors-xi-navy.vercel.app/",
-    },
-  },
-  {
     img: worldCountries,
     title: "World Countries",
     description:

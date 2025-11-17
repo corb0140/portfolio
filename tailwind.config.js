@@ -17,13 +17,6 @@ module.exports = {
         accent: `#08D9D6`,
         textColor: `#EAEAEA`,
       },
-      screens: {
-        xs: "375px",
-        sm: "440px",
-        md: "740px",
-        lg: "1024px",
-        xl: "1280px",
-      },
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],
         Fira: ["Fira Mono", "monospace"],

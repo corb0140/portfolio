@@ -13,8 +13,9 @@ export const icons = [
     icon: "vscode-icons:file-type-tailwind",
     name: "Tailwind CSS",
   },
-  { id: "nodejs", icon: "material-icon-theme:nodejs", name: "Node.js" },
-  { id: "express", icon: "simple-icons:express", name: "Express" },
+
+  { id: "wordpress", icon: "skill-icons:wordpress", name: "Wordpress" },
+  { id: "vuejs", icon: "material-icon-theme:vue", name: "Vue.js" },
   { id: "react", icon: "logos:react", name: "React" },
   {
     id: "react_native",
@@ -24,10 +25,20 @@ export const icons = [
   { id: "nextjs", icon: "logos:nextjs-icon", name: "Next.js" },
   { id: "redux", icon: "logos:redux", name: "Redux" },
   { id: "sql", icon: "vscode-icons:file-type-sql", name: "SQL" },
-  { id: "postgresql", icon: "devicon:postgresql", name: "PostgreSQL" },
   { id: "github", icon: "skill-icons:github-light", name: "GitHub" },
   { id: "figma", icon: "logos:figma", name: "Figma" },
-  { id: "materialui", icon: "logos:material-ui", name: "Material UI" },
+  { id: "gsap", icon: "simple-icons:gsap", name: "GSAP" },
+  {
+    id: "framer-motion",
+    icon: "tabler:brand-framer-motion",
+    name: "Framer-Motion",
+  },
+  { id: "shadcn", icon: "vscode-icons:file-type-light-shadcn", name: "Shadcn" },
+  { id: "nodejs", icon: "material-icon-theme:nodejs", name: "Node.js" },
+  { id: "express", icon: "simple-icons:express", name: "Express" },
   { id: "mongodb", icon: "skill-icons:mongodb", name: "MongoDB" },
+  { id: "postgresql", icon: "devicon:postgresql", name: "PostgreSQL" },
+  { id: "axios", icon: "logos:axios", name: "Axios" },
+
   { id: "git", icon: "logos:git-icon", name: "Git" },
 ];

@@ -12,9 +12,13 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="group relative overflow-hidden row-span-2 lg:row-span-2 shadow-md rounded-lg flex flex-col gap-2"
+            className="group relative overflow-hidden row-span-2 lg:row-span-2 shadow-[0_0_15px_rgba(0,0,0,0.5)] rounded-lg flex flex-col gap-2"
           >
-            <Image src={project.img} alt={project.title} className="" />
+            <Image
+              src={project.img}
+              alt={project.title}
+              className="h-full w-full object-cover"
+            />
 
             <div
               className="bg-black/80 absolute -bottom-full group-hover:bottom-0 transition-all duration-500 

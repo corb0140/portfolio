@@ -39,7 +39,10 @@ const Technologies = () => {
             id={icon.id}
             className="flex flex-col items-center text-[4.5rem] md:text-[5rem] lg:text-[4rem] opacity-0 scale-75 hover:scale-[1.1] transition duration-500"
           >
-            <Icon icon={icon.icon} />
+            <Icon
+              icon={icon.icon}
+              className="h-12 w-12 md:h-16 md:w-16 lg:h-20 lg:w-20"
+            />
 
             <p className="text-[.7rem] md:text-[.8rem] text-center pt-2">
               {icon.name}

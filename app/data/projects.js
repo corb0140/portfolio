@@ -1,8 +1,8 @@
 import { Icon } from "@iconify/react";
 import worldCountries from "@/public/images/world-countries.png";
-import bookkeepersEdge from "@/public/images/bookkeeper-lg.png";
-import sweetTooth from "@/public/images/sweet-tooth.png";
-import rockPaperScissors from "@/public/images/rock-paper-scissors.png";
+import highnoon from "@/public/images/highnoon.png";
+import pineapple from "@/public/images/pineapple.png";
+import movies from "@/public/images/movies.jpg";
 
 export const projects = [
   {
@@ -28,47 +28,56 @@ export const projects = [
     },
   },
   {
-    img: bookkeepersEdge,
-    title: "Bookkeepers Edge",
+    img: highnoon,
+    title: "Highnoon Gaming",
     description:
-      "A template for a bookkeeping website. The website is built using Nextjs, uses Tailwind CSS for styling and framer-motion for animations. The website is fully responsive and works on all devices.",
+      "A fully responsive eSports website with smooth animations and parallax scrolling. Users can view event schedules, player stats and leaderboards.",
     technologies: [
-      "VS Code",
-      "NextJS",
+      "React",
+      "TypeScript",
+      "GSAP",
       "Tailwind CSS",
-      "Redux",
+      "TanStack",
       "Responsive",
-      "REST Countries API",
+      "Zustand",
     ],
     github: {
       icon: <Icon icon="mingcute:github-line" />,
-      link: "https://github.com/corb0140/bookkeepers-edge",
+      link: "https://github.com/HighnoonGaming/highnoon_gaming",
     },
     website: {
       icon: <Icon icon="quill:link-out" />,
-      link: "https://bookkeepers-edge.vercel.app/",
+      link: "https://highnoon-gaming.vercel.app/",
     },
   },
   {
-    img: sweetTooth,
-    title: "Ice Cream E-commerce",
+    img: pineapple,
+    title: "Pineapple Landing Page",
     description:
-      "A full-stack e-commerce website for ice cream products. The website is built using React + vite, ExpressJS, and PostgreSQL. It features a fully functional shopping cart, user authentication, and an admin panel for managing products.",
-    technologies: [
-      "VS Code",
-      "NextJS",
-      "ExpressJS",
-      "MongoDB",
-      "Tailwind CSS",
-      "Responsive",
-    ],
+      "A landing page for Pineapple Smart Phone. A hilarious take on the apple smart phones. Smooth animations and parallax effects",
+    technologies: ["HTML", "JavaScript", "SCSS", "GSAP", "Responsive"],
     github: {
       icon: <Icon icon="mingcute:github-line" />,
-      link: "https://github.com/corb0140/ice_cream_ecommerce",
+      link: "https://github.com/corb0140/product_launch_landing_page",
     },
     website: {
       icon: <Icon icon="quill:link-out" />,
-      link: "https://ice-cream-ecommerce-pi.vercel.app/",
+      link: "https://corb0140.github.io/product_launch_landing_page/",
+    },
+  },
+  {
+    img: movies,
+    title: "Movies App",
+    description:
+      "Cross-platform React Native app for discovering and tracking movies, persisting watch list in async storage, and a fun quiz game. Integrated TMDB API to fetch and display movies. PS: You need expo go to view app",
+    technologies: ["React Native", "TypeScript", "TMDB API"],
+    github: {
+      icon: <Icon icon="mingcute:github-line" />,
+      link: "https://github.com/corb0140/Movies_App_RN",
+    },
+    website: {
+      icon: <Icon icon="quill:link-out" />,
+      link: "https://expo.dev/preview/update?message=update&updateRuntimeVersion=1.0.0&createdAt=2025-09-28T19%3A54%3A52.385Z&slug=exp&projectId=8f03fd4b-9a97-4731-8f49-ab56be8e2a78&group=f7845468-e68a-4bdc-a936-2d318d62348f",
     },
   },
 ];

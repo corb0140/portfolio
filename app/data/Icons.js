@@ -13,8 +13,6 @@ export const icons = [
     icon: "vscode-icons:file-type-tailwind",
     name: "Tailwind CSS",
   },
-
-  { id: "wordpress", icon: "skill-icons:wordpress", name: "Wordpress" },
   { id: "vuejs", icon: "material-icon-theme:vue", name: "Vue.js" },
   { id: "react", icon: "logos:react", name: "React" },
   {
@@ -23,6 +21,8 @@ export const icons = [
     name: "React Native",
   },
   { id: "nextjs", icon: "logos:nextjs-icon", name: "Next.js" },
+  { id: "tanstack", icon: "simple-icons:tanstack", name: "TanStack" },
+  { id: "zustand", icon: "devicon:zustand", name: "Zustand" },
   { id: "redux", icon: "logos:redux", name: "Redux" },
   { id: "sql", icon: "vscode-icons:file-type-sql", name: "SQL" },
   { id: "github", icon: "skill-icons:github-light", name: "GitHub" },
@@ -41,4 +41,5 @@ export const icons = [
   { id: "axios", icon: "logos:axios", name: "Axios" },
 
   { id: "git", icon: "logos:git-icon", name: "Git" },
+  { id: "storybook", icon: "material-icon-theme:storybook", name: "StoryBook" },
 ];

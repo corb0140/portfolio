@@ -19,13 +19,13 @@ const Banner = () => {
         Mark Corbin.
       </p>
       <p className="text-2xl md:text-5xl lg:text-6xl font-bold font-Roboto tracking-wide text-gray-300 pb-10">
-        I am a Frontend Developer.
+        I am a Web Developer.
       </p>
       <p className="text-gray-300 text-[1rem] tracking-tighter lg:w-[60%]">
-        I&apos;m a Frontend Developer with a strong foundation in both web and
-        mobile development. I work primarily within the React ecosystem and I
-        enjoy turning ideas into clean, functional websites and apps. Though I
-        enjoy working more on the frontend, I have some knowledge in backend
+        I&apos;m a Web Developer with a strong foundation in both web and mobile
+        development. I work primarily within the React ecosystem and I enjoy
+        turning ideas into clean, functional websites and apps. Though I enjoy
+        working more on the frontend, I have some knowledge in backend
         development using node and express with postgresql and mongodb.
       </p>
 

@@ -79,7 +79,7 @@ const About = () => {
           style={{ translateY }}
           className="text-sm md:text-[1rem] tracking-tight leading-7 pb-5 lg:w-[55%]"
         >
-          I&apos;m Mark Corbin, a Frontend Developer originating Barbados and a
+          I&apos;m Mark Corbin, a Web Developer originating from Barbados and a
           graduate of Algonquin College&apos;s Mobile Development and Design
           program. I’m passionate about building seamless digital experiences by
           bringing ideas to life for the web and mobile. I enjoy solving complex
